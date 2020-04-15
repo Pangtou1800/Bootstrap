@@ -146,6 +146,123 @@
 
         <hr />
 
+        <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+        <p>To switch two directories, type <kbd>cd</kbd> followed by the name of the directory.</p>
+        <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+        <p>
+            <pre>&lt;p&gt;Sample text here...Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.&lt;/p&gt;</pre>
+        </p>
+        <p><var>y</var> = k<var>x</var> + b</p>
+        <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+
+        <p class="danger">Danger ?</p>
+
+        <hr />
+
+        <script>
+            function tableOnClick() {
+                let ele = document.getElementById('table');
+                let exp = document.getElementById('littelTag');
+                switch (ele.classList[1]) {
+                    case 'table-striped':
+                        exp.innerText = "table-bordered";
+                        ele.setAttribute('class', 'table table-bordered');
+                        break;
+                    case 'table-bordered':
+                        exp.innerText = "table-hover";
+                        ele.setAttribute('class', 'table table-hover');
+                        break;
+                    case 'table-hover':
+                        exp.innerText = "table-condensed";
+                        ele.setAttribute('class', 'table table-condensed');
+                        break;
+                    case 'table-condensed':
+                        exp.innerText = "table";
+                        ele.setAttribute('class', 'table');
+                        break;
+                    default:
+                        exp.innerText = "table-striped";
+                        ele.setAttribute('class', 'table table-striped');
+                        break;
+                }
+            }
+        </script>
+        <table class="table" id="table" onclick="tableOnClick()">
+            <caption>Optional table caption. <p><small id="littelTag">table</small></p>
+            </caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr class="active">
+                    <th scope="row">2</th>
+                    <td>Jacod</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr class="success">
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                <tr class="info">
+                    <th scope="row">4</th>
+                    <td>Apple</td>
+                    <td>Jack</td>
+                    <td>@pony</td>
+                </tr>
+                <tr class="warning">
+                    <th scope="row">5</th>
+                    <td>Kanna</td>
+                    <td>Kobayashi</td>
+                    <td>@dragon</td>
+                </tr>
+                <tr class="danger">
+                    <th scope="row">6</th>
+                    <td>Renge</td>
+                    <td>Miyauchi</td>
+                    <td>@Nyanpasu</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr />
+
+        <form>
+            <div style="width: 800px; margin-right: auto; border: 1px solid #eee; border-radius: 5px; padding: 15px;">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile" />
+                    <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" /> Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
 
