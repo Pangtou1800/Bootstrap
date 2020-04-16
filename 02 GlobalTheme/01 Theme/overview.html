@@ -13,6 +13,7 @@
     <div class="container">
         <div class="page-header">
             <h1>Demonstration of basic Bootstrap styles</h1>
+            <p><a href="#footer">Goto Bottom</a></p>
         </div>
         <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
         <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
@@ -263,7 +264,150 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </div>
         </form>
+
+        <hr />
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.cor" />
+            </div>
+            <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+
+        <hr />
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password" />
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" /> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Sign in</button>
+        </form>
+
+        <hr />
+
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmout">Amout (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input class="form-control" type="text" id="exampleInputAmout" placeholder="Amout" />
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer cash</button>
+        </form>
+
+        <hr />
+
+        <div style="width: 800px; margin-right: auto; border: 0px solid #eee; border-radius: 5px; padding: 15px;">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" /> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <input type="text" class="form-control" placeholder="Text input" />
+        <br />
+        <textarea class="form-control" rows="3">textarea</textarea>
+        <br />
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="" />
+                Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>
+        <div class="checkbox disabled">
+            <label>
+                <input type="checkbox" value="" disabled />
+                Option two is disabled
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadio" id="optionsRadios1" value="option1" checked />
+                Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadio" id="optionsRadios2" value="option2" />
+                Option two can be something else and selecting it will deselect option one
+            </label>
+        </div>
+        <div class="radio disabled">
+            <label>
+                <input type="radio" name="optionsRadio" id="optiosRadios3" value="optioin3" disabled />
+                Option three is disabled
+            </label>
+        </div>
+
+        <hr />
+
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1" /> 1
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2" /> 2
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3" /> 3
+        </label>
+        <br />
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadios" id="inlineRadio1" value="option1" checked /> 1
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadios" id="inlineRadio2" value="option2" /> 2
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadios" id="inlineradio3" value="option3" /> 3
+        </label>
+
     </div>
+
+    <footer>
+        <div class="footer" id="footer" style="height: 150px; background-color: #eee; margin-top: 30px;">
+        </div>
+    </footer>
 </body>
 
 </html>
