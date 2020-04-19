@@ -16,6 +16,10 @@
             padding: 15px;
             margin-top: 15px;
         }
+
+        p[class^="bg"] {
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -638,6 +642,124 @@
             <a href="#buttons" class="btn btn-default btn-lg disabled">Link .disabled</a>
         </p>
 
+        <div class="page-header" id="image">
+            <h2>Image</h2>
+        </div>
+
+        <dl class="dl-horizontal">
+            <dt>
+                <label>.img-responsive</label>
+            </dt>
+            <dd>
+                <div class="showbox" style="width: 200px; display: inline-block; vertical-align: top; padding: 5px; margin-top: 0; margin-bottom: 15px;">
+                    <img src="../imgs/AppleJack.png" alt="ResponsiveImage" class="img-responsive" />
+                </div>
+            </dd>
+            <dt>
+                <label>default</label>
+            </dt>
+            <dd>
+                <div class="showbox" style="width: 200px; display: inline-block; vertical-align: middle; padding: 5px; margin-top: 0;">
+                    <img src="../imgs/AppleJack.png" alt="DefaultImage" />
+                </div>
+            </dd>
+        </dl>
+
+        <div class="showbox" style="width: auto;">
+            <img src="../imgs/AppleJack.png" alt="img-rounded" class="img-rounded" style="margin-right: 15px;" />
+            <img src="../imgs/Kanna.jpg" alt="img-circle" class="img-circle" style="margin-right: 15px;" />
+            <img src="../imgs/Nyanpasu.jpg" alt="img-thumbnail" class="img-thumbnail" />
+        </div>
+
+        <div class="page-header">
+            <h2>Assist Class</h2>
+        </div>
+
+        <div class="showbox">
+            <dl class="dl-horizontal">
+                <dt>default:</dt>
+                <dd>
+                    <p>Just default text word.</p>
+                </dd>
+                <dt>.text-muted:</dt>
+                <dd>
+                    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                </dd>
+                <dt>.text-primary:</dt>
+                <dd>
+                    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </dd>
+                <dt>.text-success:</dt>
+                <dd>
+                    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                </dd>
+                <dt>.text-info:</dt>
+                <dd>
+                    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </dd>
+                <dt>.text-warning:</dt>
+                <dd>
+                    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+                </dd>
+                <dt>.text-danger:</dt>
+                <dd>
+                    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </dd>
+            </dl>
+
+            <dl class="dl-horizontal">
+                <dt>default:</dt>
+                <dd>
+                    <p>Just default text word.</p>
+                </dd>
+                <dt>.bg-primary:</dt>
+                <dd>
+                    <p class="bg-primary img-rounded">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </dd>
+                <dt>.bg-success:</dt>
+                <dd>
+                    <p class="bg-success img-rounded">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                </dd>
+                <dt>.bg-info:</dt>
+                <dd>
+                    <p class="bg-info img-rounded">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </dd>
+                <dt>.bg-warning:</dt>
+                <dd>
+                    <p class="bg-warning img-rounded">Etiam porta sem malesuada magna mollis euismod.</p>
+                </dd>
+                <dt>.bg-danger:</dt>
+                <dd>
+                    <p class="bg-danger img-rounded">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </dd>
+            </dl>
+        </div>
+
+
+        <div class="showbox">
+            <p>
+                <button type="button" class="close" arial-label="Close" style="float: none;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </p>
+            <p>
+                <span class="caret"></span>
+            </p>
+        </div>
+
+        <div class="showbox">
+            <div class="center-block img-thumbnail" style="width: 100px; height: 100px; background-color: lightgreen;">
+                <p style="text-align: center; line-height: 85px;">Center Block</p>
+            </div>
+        </div>
+
+        <br />
+        <p><strong>通过为父元素</strong>添加<code>.clearfix</code>类可以很容易地清除浮动（<code>float</code>）。</p>
+
+        <button type="button" class="btn btn-default" onclick="(function() {
+            document.getElementById('hiddenInput').focus();
+        })()">Click me</button>
+        <input type="text" class="sr-only sr-only-focusable" placeholder="Can you see me?" id="hiddenInput" />
 
     </div>
 
