@@ -23,14 +23,57 @@
             margin-right: 10px;
         }
     </style>
+    <style id="fixedNavStyle">
+        body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
+
+    <nav class="navbar navbar-default navbar-static-top hidden" id="staticFixedTopNavDemo">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbarCollapse3">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <spanc class="navbar-brand">Project 4</spanc>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse3">
+                <p class="navbar-text">Welcom to fixed top Bootstrap !</p>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Action1</a></li>
+                    <li><a href="#">Action2</a></li>
+                    <li><a href="#">Action3</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="" />
+                        <button type="button" class="btn btn-default">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="page-header">
             <h1><strong>Components</strong></h1>
         </div>
         <a href="#footer" class="btn btn-primary btn-xs">Goto bottom</a>
+        <a href="#" class="btn btn-primary btn-xs" onclick="(function() {
+            console.log('clicked');
+            let navEle = document.getElementById('staticFixedTopNavDemo');
+            if (!navEle.className.includes('hidden')) {
+                navEle.className = navEle.className.concat(' hidden');
+            } else {
+                navEle.className = navEle.className.replace('hidden', '');
+            }
+        })()">Show navbar</a>
 
         <div class="page-header">
             <h2>Glyphicon</h2>
@@ -1312,6 +1355,105 @@
                     <p class="navbar-text navbar-right">
                         Signed in as <a href="#" class="navbar-link">AppleJack</a>
                     </p>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-default" id="fixedTopNavDemo">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">Project 2</span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse1">
+                    <p class="navbar-text">Welcome to Bootstrap !</p>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Action1</a></li>
+                        <li><a href="#">Action2</a></li>
+                        <li><a href="#">Action3</a></li>
+                    </ul>
+                    <button class="btn btn-info navbar-btn navbar-right" onclick="(function() {
+                        let targetNav = document.getElementById('fixedTopNavDemo');
+                        let navContainer = targetNav.querySelector('[class^=\'container\']');
+                        let fixedTopClassName = 'navbar-fixed-top';
+                        let fixedTopStyle = document.getElementById('fixedNavStyle').sheet;
+                        if (targetNav.className.indexOf(fixedTopClassName) > 0) {
+                            targetNav.className = targetNav.className.replace(fixedTopClassName, '');
+                            navContainer.className = navContainer.className.replace('container', 'container-fluid');
+                            fixedTopStyle.cssRules[0].style['padding-top'] = '0';
+                        } else {
+                            targetNav.className = targetNav.className.concat(' ').concat(fixedTopClassName);
+                            navContainer.className = navContainer.className.replace('container-fluid', 'container');
+                            fixedTopStyle.cssRules[0].style['padding-top'] = '60px';
+                        }
+                    })()">Fix me to top</button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-default" id="fixedBottomNavDemo">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse2">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">Project 3</span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse2">
+                    <p class="navbar-text">Welcome to the bottom of Bootstrap !</p>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Action1</a></li>
+                        <li><a href="#">Actioin2</a></li>
+                        <li><a href="#">Actioin3</a></li>
+                    </ul>
+                    <button class="btn btn-danger navbar-btn navbar-right" onclick="(function() {
+                        let targetNav = document.getElementById('fixedBottomNavDemo');
+                        let navContainer = targetNav.querySelector('[class^=\'container\']');
+                        let fixedBottomClassName = 'navbar-fixed-bottom';
+                        let fixedBottomStyle = document.getElementById('fixedNavStyle').sheet;
+                        if (targetNav.className.indexOf(fixedBottomClassName) > 0) {
+                            targetNav.className = targetNav.className.replace(fixedBottomClassName, '');
+                            navContainer.className = navContainer.className.replace('container', 'container-fluid');
+                            fixedBottomStyle.cssRules[0].style['padding-bottom'] = '0';
+                        } else {
+                            targetNav.className = targetNav.className.concat(' ').concat(fixedBottomClassName);
+                            navContainer.className = navContainer.className.replace('container-fluid', 'container');
+                            fixedBottomStyle.cssRules[0].style['padding-bottom'] = '60px';
+                        }
+                    })()">Fix me to bottom</button>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse5">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Project 5</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse5">
+                    <p class="navbar-text">Inverse navbar</p>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Action1</a></li>
+                        <li><a href="#">Action2</a></li>
+                        <li><a href="#">Action3</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email" />
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
                 </div>
             </div>
         </nav>
