@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Javascript Components</title>
+    <link href="../../favicon.ico" rel="icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1><strong>Javascript Components</strong></h1>
+        </div>
+
+        <div class="page-header">
+            <h2>modal.js</h2>
+        </div>
+
+        <div class="modal-dialog" style="margin-left: 0;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+        <div class="modal fade" id="myModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myLargeModal">大模态框</button>
+        <div class="modal fade" id="myLargeModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">Large modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img src="../imgs/AppleJack-small.png" class="media-object thumbnail" alt="AppleJack" />
+                            </div>
+                            <div class="media-body">
+                                <h3>Fake Plastic Trees</h3>
+                                <p>Her green plastic watering can, for her fake Chinese rubber plant, in fake plastic earth.</p>
+                                <p>That she bought from a rubber man, in a town full of rubber plants, just to get rid of itself.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mySmallModal">小模态框</button>
+        <div class="modal fade" id="mySmallModal" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">Small modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="media">
+                            <div class="media-body">
+                                <img src="../imgs/AppleJack-small.png" class="media-object thumbnail" alt="AppleJack" />
+                                <h3>Fake Plastic Trees</h3>
+                                <p>Her green plastic watering can,</p>
+                                <p>for her fake Chinese rubber plant,</p>
+                                <p>in fake plastic earth.</p>
+                                <p>That she bought from a rubber man,</p>
+                                <p>in a town full of rubber plants,</p>
+                                <p>just to get rid of itself.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noFadeModal">No fade modal</button>
+        <div class="modal" id="noFadeModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">No fade modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <img src="../imgs/AppleJack-small.png" class="media-object thumbnail" alt="AppleJack" />
+                            </div>
+                            <div class="media-body">
+                                <h3>Fake Plastic Trees</h3>
+                                <p>Her green plastic watering can, for her fake Chinese rubber plant, in fake plastic earth.</p>
+                                <p>That she bought from a rubber man, in a town full of rubber plants, just to get rid of itself.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gridModal">Grid modal</button>
+        <div class="modal fade" id="gridModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">Grid system in modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" style="width: 100%">
+                                        .col-md-4
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" style="width: 100%">
+                                        .col-md-offset-4
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-3">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" style="width: 100%">
+                                        .col-md-3
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-md-offset-4">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" style="width: 100%">
+                                        .col-md-2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3" style="border: 1px solid pink;">.col-md-6 .col-md-offset-3</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9" style="border: 1px solid pink;">
+                                Level 1: .col-sm-9
+                                <div class="row">
+                                    <div class="col-xs-8 col-sm-6" style="border: 1px solid pink;">
+                                        Level 2: .col-xs-8 .col-sm-6
+                                    </div>
+                                    <div class="col-xs-4 col-sm-6" style="border: 1px solid pink;">
+                                        Level 2: .col-xs-4 .col-sm-6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" style="height: 120px; background-color: #eee; margin-top: 60px; border-top: 1px solid #ddd; border-radius: 0 0 3px 3px;">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
