@@ -288,6 +288,82 @@
             </div>
         </div>
 
+        <div class="page-header">
+            <h2>dropdown.js</h2>
+        </div>
+
+        <div class="dropdown" id="dropdownDiv">
+            <button id="dLabel" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Dropdown trigger <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="menu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">action3</a></li>
+                <li class="divider"></li>
+                <li><a href="#">action4</a></li>
+            </ul>
+        </div>
+
+        <div class="page-header">
+            <h2>scrollspy.js</h2>
+        </div>
+
+
+        <nav class="navbar navbar-default" id="spiedNav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scrollSpyNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project</a>
+                </div>
+                <div class="collapse navbar-collapse" id="scrollSpyNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#foo">@foo</a></li>
+                        <li><a href="#bar">@bar</a></li>
+                        <li><a href="#plastic">@plastic</a></li>
+                        <li class="dropdown">
+                            <a href="#dropdownNav" class="dropdown-toggle" data-toggle="dropdown">@dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="dropdownNavlist">
+                                <li><a href="#action1">Action 1</a></li>
+                                <li><a href="#action2">Action 2</a></li>
+                                <li><a href="#action3">Action 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-spy="scroll" data-target="#spiedNav" data-offset="0" style="width: 300px; height: 200px; overflow-y: scroll; margin-right: auto; position: relative;">
+            <h4 id="foo">@foo</h4>
+            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan.
+                Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa
+                biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            <h4 id="bar">@bar</h4>
+            <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles.
+                Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer
+                vice keytar deserunt.</p>
+            <h4 id="plastic">@plastic</h4>
+            <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam.
+                High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur
+                fanny pack iphone.</p>
+            <h4 id="action1">Action 1</h4>
+            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan.
+                Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa
+                biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            <h4 id="action2">Action 2</h4>
+            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan.
+                Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa
+                biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+            <h4 id="action3">Action 3</h4>
+            <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan.
+                Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa
+                biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+        </div>
+
         <footer id="footer" style="height: 120px; background-color: #eee; margin-top: 60px; border-top: 1px solid #ddd; border-radius: 0 0 3px 3px;">
         </footer>
     </div>
@@ -326,6 +402,7 @@
         $('#demoModal').on('hidden.bs.modal', function (e) {
             $('#indicator').toggleClass('btn-info').toggleClass('btn-default');
         })
+
     </script>
 </body>
 
